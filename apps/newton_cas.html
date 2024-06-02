@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/site.css">
+    <title>Newton Computer Algebra</title>
+</head>
+<body>
+
+<main>
+    <article class="container mx-auto flex flex-col items-center justify-start my-[30px]">
+        <p class="text-lg font-bold mb-4">Newton API for Computer Algebra System</p>
+
+        <!-- Newton Input Mathematical Expressions -->
+        <textarea id="newton-inp" class="block w-full h-32 border border-gray-300 rounded-md p-4 mb-4"
+                  contenteditable="true" placeholder="Enter your mathematical expressions here..."></textarea>
+
+        <!-- Commands -->
+        <section class="flex space-x-4 mb-4">
+            <button id="cmd-simplify" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Simplify
+            </button>
+            <button id="cmd-factor" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
+                Factor
+            </button>
+            <button id="cmd-derive" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+                Derivative
+            </button>
+        </section>
+
+        <section class="flex space-x-4 mb-4">
+            <button id="btn-clear" class="bg-seagull-800 hover:bg-seagull-300 text-white font-bold py-2 px-4 rounded">
+                Clear
+            </button>
+        </section>
+
+        <!-- Output Section -->
+        <section id="newton-output"
+                 class="w-full border border-gray-300 rounded-md p-4 max-w-lg mx-auto overflow-y-auto">
+            <!-- Output will be displayed here -->
+        </section>
+    </article>
+</main>
+
+<script src="../assets/js/apps/newton-cas/script.js"></script>
+</body>
+</html>

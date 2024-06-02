@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/site.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
+
+    <script type="module" src="./templates/base.js" defer></script>
+    <script type="module" src="./templates/project-card-template.js" defer></script>
+
+    <title>Projects</title>
+</head>
+
+<body>
+
+    <base-header-footer>
+        <main slot="main-content"
+            class="px-4 flex flex-col md:min-full md:flex-row flex-wrap md:grid md:grid-cols-4 gap-4 items-stretch">
+
+            <project-card class="flex flex-col h-full m-[5px]" src="./apps" btn-label="Apps"
+                title="Mini Web Apps">
+                <p slot="card-content">
+                    This is a collection of Mini Web Applications built with JavaScript/HTML/CSS. I try my best to make
+                    my life hard
+                    and only use vanilla JS/HTML/CSS. But I may occasionally cheat with Frameworks.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]" src="#" btn-label="Site" title="My First Website">
+                <p slot="card-content">
+                    This is my very first static website as an assessment from TAFE Certificate 4 in IT Programming (Web Technologies).
+                    In this cluster, we learn the fundamentals of HTML/CSS/JavaScript. We also learned to Tailwind CSS Framework.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]"
+                src="https://github.com/ca20110820/python-beginner-projects/tree/computer-algebra/projects/computer-algebra"
+                btn-label="GitHub" title="Computer Algebra">
+                <p slot="card-content">
+                    This project aims to provide a Python wrapper and GUI for the <a class="text-blue-600"
+                        href="https://github.com/aunyks/newton-api" target="_blank">Newton API</a>,
+                    a Computer Algebra System
+                    (CAS) that allows users to perform various mathematical computations.<br>
+                    This project is a contribution to
+                    <a href="https://github.com/Mrinank-Bhowmick/python-beginner-projects" class="text-blue-600"
+                        target="_blank">
+                        Mrinank-Bhowmick/python-beginner-projects
+                    </a>.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]"
+                src="https://github.com/Mrinank-Bhowmick/python-beginner-projects/tree/main/projects/Expense-Tracker"
+                btn-label="GitHub" title="Expense Tracker">
+                <p slot="card-content">
+                    The Expense Tracker Application is a GUI application built using Python and Customtkinter/Tkinter
+                    for
+                    managing expenses.<br>
+                    This project is a contribution to
+                    <a href="https://github.com/Mrinank-Bhowmick/python-beginner-projects" class="text-blue-600"
+                        target="_blank">
+                        Mrinank-Bhowmick/python-beginner-projects
+                    </a>.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]"
+                src="https://github.com/Mrinank-Bhowmick/python-beginner-projects/tree/main/projects/Battleship/battleship_v2"
+                btn-label="GitHub" title="Battleship 2.0">
+                <p slot="card-content">
+                    Modular Battleship Game. Modular Battleship Game. This application is an attempt to modularize the
+                    first
+                    implementation of the Battleship game.<br>
+                    This project is a contribution to
+                    <a href="https://github.com/Mrinank-Bhowmick/python-beginner-projects" class="text-blue-600"
+                        target="_blank">
+                        Mrinank-Bhowmick/python-beginner-projects
+                    </a>.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]" src="https://github.com/ca20110820/tictactoe"
+                btn-label="GitHub" title="Tic-Tac-Toe">
+                <p slot="card-content">
+                    This modular Tic-Tac-Toe game, written in Python, is designed for easy extension to support various
+                    user
+                    interfaces. The repository provided here is a prototype, as the original implementation is stored in
+                    GitHub Classroom.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]" src="https://github.com/ca20110820/CoinGeckoMAUI"
+                btn-label="GitHub" title="CryptoMAUI">
+                <p slot="card-content">
+                    CoinGeckoMAUI is a mobile application built with .NET MAUI, designed to provide users with
+                    cryptocurrency data and analytics.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]" src="https://github.com/ca20110820/lottery-program"
+                btn-label="GitHub" title="Lottery Program">
+                <p slot="card-content">
+                    This App is Written in C#/.NET and a Command-Line Interface for the Lottery Game.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]"
+                src="https://github.com/ca20110820/at2-ictprg440-ictprg433" btn-label="GitHub"
+                title="Recruitment Tracker App">
+                <p slot="card-content">
+                    A Desktop App built with C#/.NET & WPF for Managing Recruiters and Contractors.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]"
+                src="https://github.com/ca20110820/ictprg302-coding-project" btn-label="GitHub" title="Wordle Game">
+                <p slot="card-content">
+                    A Console App written in Python for playing the popular Wordle Game.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]"
+                src="https://github.com/ca20110820/at3-ictprg431-ictprg432" btn-label="GitHub" title="Company Database">
+                <p slot="card-content">
+                    A GUI App developed with C#/.NET and WPF for interacting with MySQL Database simulating a company
+                    database.
+                </p>
+            </project-card>
+
+            <project-card class="flex flex-col h-full m-[5px]"
+                src="https://github.com/ca20110820/civ-ipriot-proj-carpark" btn-label="GitHub"
+                title="Car Park Simulation">
+                <p slot="card-content">
+                    Program built with Python and MQTT to simulate Car Park Sensors with Cool Dashboard.
+                </p>
+            </project-card>
+        </main>
+    </base-header-footer>
+
+</body>
+
+</html>

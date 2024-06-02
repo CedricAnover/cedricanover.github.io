@@ -1,0 +1,16 @@
+{
+  "name": "cedricanover.github.io",
+  "version": "1.0.0",
+  "description": "Personal Static Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3",
+    "tw-elements": "^2.0.0"
+  }
+}

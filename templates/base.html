@@ -1,0 +1,67 @@
+<template id="template-base">
+    <style></style>
+
+    <!--Need to use div here because the body will on the specific pages.-->
+    <div class="flex flex-col h-screen justify-between">
+        <header id="base-header"
+            class="sticky top-0 left-0 right-0 text-heliotrope-100 bg-heliotrope-600 flex flex-col justify-center w-full pt-[10px] mb-[5px] gap-2">
+            <section class="h-full grid grid-cols-3 items-center">
+                <!--Back Button-->
+                <div class="self-center justify-self-center hover:scale-130 focus:scale-130">
+                    <a href="javascript:history.back()" class="md:hidden">
+                        <img src="https://img.icons8.com/?size=100&id=xGtnyCEIrmt1&format=png&color=000000" alt="Back"
+                            class="w-8 h-auto">
+                    </a>
+                </div>
+
+                <!--index of the project root-->
+                <a class="class-path" href="">
+                    <h1 class="font-mono text-xl text-center self-center justify-self-center">
+                        Cedric Anover</h1>
+                </a>
+
+                <div class="block md:hidden self-center justify-self-end pr-1 py-1 mr-[10px]">
+                    <button id="menu-toggle"
+                        class="text-black focus:outline-none focus:text-gray-50 focus:bg-heliotrope-800 p-2 rounded-lg border-2 border-heliotrope-800 focus:border-heliotrope-400">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+
+            <nav id="header-nav" class="hidden md:block">
+                <ul
+                    class="font-roboto list-reset flex flex-col md:flex-row justify-center items-center gap-2 py-3 bg-heliotrope-900 md:bg-heliotrope-600 nav-bar">
+                    <!--index of the project root-->
+                    <li><a class="hover:bg-heliotrope-200 hover:text-black px-3 py-2 rounded-md class-path"
+                            href="">Home</a></li>
+                    <li><a class="hover:bg-heliotrope-200 hover:text-black px-3 py-2 rounded-md class-path"
+                            href="about.html">About</a>
+                    </li>
+                    </li>
+                    <li><a class="hover:bg-heliotrope-200 hover:text-black px-3 py-2 rounded-md class-path"
+                            href="projects.html">Projects</a>
+                    </li>
+                    <li><a class="hover:bg-heliotrope-200 hover:text-black px-3 py-2 rounded-md class-path"
+                            href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--main will be defined on the specific pages.-->
+        <div class="w-screen h-auto mx-auto overflow-y-auto">
+            <slot name="main-content"></slot>
+        </div>
+
+        <footer class="sticky bottom-0 left-0 right-0 text-heliotrope-100 bg-heliotrope-600 text-center">
+            <section class="flex flex-col justify-center items-center w-screen p-2 mt-auto">
+                <h1>&copy; <span id="year"></span> Cedric Anover. All rights reserved.</h1>
+                <a href="copyrights.html" class="mt-2 class-path">Copyrights</a>
+            </section>
+        </footer>
+    </div>
+
+</template>

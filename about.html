@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/site.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/about.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+          rel="stylesheet">
+
+    <script type="module" src="./templates/base.js" defer></script>
+
+    <title>About</title>
+</head>
+<body>
+
+<!--Background Video-->
+<video autoplay muted loop class="absolute inset-0 w-full h-full object-fill">
+    <source src="./assets/media/pink-circles.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<base-header-footer>
+    <main slot="main-content" class="container mx-auto flex flex-col items-center justify-start my-8 space-y-8">
+        <section class="z-0 w-full max-w-screen-lg bg-white p-6 rounded-lg shadow-lg shadow-seagull-300">
+            <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+            <p class="text-base leading-relaxed">
+                Hi, I'm Cedric Anover, a passionate programmer with the ambition to become a
+                <strong>DevOps Engineer</strong> and <strong>Full-Stack Developer</strong>.
+            </p>
+            <p>
+                I have a background in Mathematics, which I use to solve both pure and applied problems.
+            </p>
+        </section>
+
+        <section class="z-0 w-full max-w-screen-lg bg-white p-6 rounded-lg shadow-lg shadow-seagull-300">
+            <h3 class="text-2xl font-semibold mb-4">Hobbies</h3>
+            <p class="text-base leading-relaxed">
+                Weirdly enough, my main hobby is reading and learning anything that is non-fictional.
+            </p>
+            <p class="text-base leading-relaxed">
+                I am also starting to get interested in the world of DevOps with cool stuff like
+                <i>Infrastructure-as-Code</i>, <i>CI/CD Automation</i>, <i>Computer Networking</i>, etc.
+            </p>
+        </section>
+
+        <section class="z-0 w-full max-w-screen-lg bg-white p-8 rounded-xl shadow-lg shadow-seagull-300">
+            <h3 class="text-3xl font-bold mb-6">Skills and Tech</h3>
+            <h2 class="text-2xl font-semibold mb-4">
+                Technologies:
+            </h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>
+                    <b>Programming Languages:</b> Python, C#/.NET, JavaScript
+                </li>
+                <li>
+                    <b>Markup Languages:</b> HTML, XAML, XML
+                </li>
+                <li>
+                    <b>Others Languages:</b> SQL, CSS, Bash
+                </li>
+                <li>
+                    <b>Virtualization:</b> Docker, Podman, VMWare, VirtualBox, Proxmox
+                </li>
+                <li>
+                    <b>OS:</b> Windows, Debian/Ubuntu
+                </li>
+                <li>
+                    <b>CI/CD:</b> GitHub Actions
+                </li>
+                <li>
+                    <b>Version Control:</b> Git
+                </li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold mt-8 mb-4">
+                To-Learn/Learning:
+            </h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>
+                    <b>Languages:</b> NoSQL, Go, Dart, Rust
+                </li>
+                <li>
+                    <b>DevOps:</b> Ansible, Terraform, Jenkins, Vagrant, Packer, Minikube, Consul
+                </li>
+            </ul>
+        </section>
+    </main>
+</base-header-footer>
+
+</body>
+</html>

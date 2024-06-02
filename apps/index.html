@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../assets/css/site.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+          rel="stylesheet">
+
+    <script type="module" src="../templates/base.js" defer></script>
+
+    <style>
+        [slot="main-content"] {
+            margin-bottom: 20px;
+            font-family: "Chivo Mono", monospace;
+            font-style: normal;
+        }
+    </style>
+
+    <title>Apps</title>
+</head>
+<body>
+
+<base-header-footer>
+    <main slot="main-content" class="container mx-auto flex flex-col items-center justify-start my-[30px]">
+        <h2 class="md:text-3xl font-bold mb-4">Welcome to my Mini Web Apps!!!</h2>
+
+        <a id="btn-newton-cas"
+           href="newton_cas.html"
+           target="_blank"
+           role="button"
+           class="mb-5 inline-block rounded-full bg-shocking-pink-400 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-shocking-pink-900 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-indigo-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-indigo-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0">
+            Newton Computer Algebra
+        </a>
+
+        <a id="btn-tasks"
+           href="./tasks"
+           target="_blank"
+           role="button"
+           class="mb-5 inline-block rounded-full bg-shocking-pink-400 text-neutral-50 shadow-[0_4px_9px_-4px_rgba(51,45,45,0.7)] hover:bg-shocking-pink-900 hover:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] focus:bg-indigo-800 focus:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] active:bg-indigo-700 active:shadow-[0_8px_9px_-4px_rgba(51,45,45,0.2),0_4px_18px_0_rgba(51,45,45,0.1)] px-6 pb-2 pt-2.5 text-xs font-medium leading-normal transition duration-150 ease-in-out focus:outline-none focus:ring-0">
+            Simple Task Management App
+        </a>
+    </main>
+</base-header-footer>
+
+</body>
+</html>
