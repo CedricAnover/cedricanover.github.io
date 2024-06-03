@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,88 +11,253 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
 
     <script type="module" src="./templates/base.js" defer></script>
 
     <title>About</title>
 </head>
+
 <body>
 
-<!--Background Video-->
-<video autoplay muted loop class="absolute inset-0 w-full h-full object-fill">
-    <source src="./assets/media/pink-circles.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>
+    <!--Background Video-->
+    <video autoplay muted loop class="absolute inset-0 w-full h-full object-fill">
+        <source src="./assets/media/pink-circles.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 
-<base-header-footer>
-    <main slot="main-content" class="container mx-auto flex flex-col items-center justify-start my-8 space-y-8">
-        <section class="z-0 w-full max-w-screen-lg bg-white p-6 rounded-lg shadow-lg shadow-seagull-300">
-            <h3 class="text-2xl font-semibold mb-4">About Me</h3>
-            <p class="text-base leading-relaxed">
-                Hi, I'm Cedric Anover, a passionate programmer with the ambition to become a
-                <strong>DevOps Engineer</strong> and <strong>Full-Stack Developer</strong>.
-            </p>
-            <p>
-                I have a background in Mathematics, which I use to solve both pure and applied problems.
-            </p>
-        </section>
+    <base-header-footer>
+        <main slot="main-content" class="container mx-auto flex flex-col items-center justify-start my-8 space-y-8">
+            <!-- Intro -->
+            <section class="text-pretty z-0 w-full max-w-screen-lg bg-white p-6 rounded-lg shadow-lg shadow-seagull-300">
+                <h3 class="text-2xl font-semibold mb-4">About Me</h3>
+                <p class="text-base leading-relaxed">
+                    As a dedicated and adaptable individual, I am committed to continuous learning and thrive on
+                    tackling technical challenges. With ongoing software development training in TAFE's Certificate IV
+                    in IT Programming, I am gaining a strong foundation in programming and essential IT concepts. Driven
+                    by a passion for innovation, I aspire to evolve into a DevOps Engineer and Full-Stack Developer,
+                    leveraging my analytical mindset and problem-solving skills to drive impactful solutions. My
+                    approach is characterized by a keen ability to adapt to new technologies and a relentless pursuit of
+                    excellence. With a focus on continuous growth and development, I am poised to contribute effectively
+                    to dynamic teams and drive success in today's fast-paced tech landscape.
+                </p>
+            </section>
 
-        <section class="z-0 w-full max-w-screen-lg bg-white p-6 rounded-lg shadow-lg shadow-seagull-300">
-            <h3 class="text-2xl font-semibold mb-4">Hobbies</h3>
-            <p class="text-base leading-relaxed">
-                Weirdly enough, my main hobby is reading and learning anything that is non-fictional.
-            </p>
-            <p class="text-base leading-relaxed">
-                I am also starting to get interested in the world of DevOps with cool stuff like
-                <i>Infrastructure-as-Code</i>, <i>CI/CD Automation</i>, <i>Computer Networking</i>, etc.
-            </p>
-        </section>
+            <!-- Hobbies -->
+            <section class="text-pretty z-0 w-full max-w-screen-lg bg-white p-6 rounded-lg shadow-lg shadow-seagull-300">
+                <h3 class="text-2xl font-semibold mb-4">Hobbies</h3>
+                <p class="text-base leading-relaxed">
+                    Weirdly enough, my main hobby is reading and learning anything that is non-fictional.
+                </p>
+                <p class="text-base leading-relaxed">
+                    I am also starting to get interested in the world of DevOps with cool stuff like
+                    <i>Infrastructure-as-Code</i>, <i>CI/CD Automation</i>, <i>Computer Networking</i>, etc.
+                </p>
+            </section>
 
-        <section class="z-0 w-full max-w-screen-lg bg-white p-8 rounded-xl shadow-lg shadow-seagull-300">
-            <h3 class="text-3xl font-bold mb-6">Skills and Tech</h3>
-            <h2 class="text-2xl font-semibold mb-4">
-                Technologies:
-            </h2>
-            <ul class="list-disc list-inside space-y-2">
-                <li>
-                    <b>Programming Languages:</b> Python, C#/.NET, JavaScript
-                </li>
-                <li>
-                    <b>Markup Languages:</b> HTML, XAML, XML
-                </li>
-                <li>
-                    <b>Others Languages:</b> SQL, CSS, Bash
-                </li>
-                <li>
-                    <b>Virtualization:</b> Docker, Podman, VMWare, VirtualBox, Proxmox
-                </li>
-                <li>
-                    <b>OS:</b> Windows, Debian/Ubuntu
-                </li>
-                <li>
-                    <b>CI/CD:</b> GitHub Actions
-                </li>
-                <li>
-                    <b>Version Control:</b> Git
-                </li>
-            </ul>
+            <!-- Tech Skills and Knowledge -->
+            <section class="text-pretty z-0 w-full max-w-screen-lg bg-white p-8 rounded-xl shadow-lg shadow-seagull-300">
+                <h3 class="text-3xl font-bold mb-6">Skills and Tech</h3>
+                <h2 class="text-2xl font-semibold mb-4">
+                    Technologies:
+                </h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>
+                        <b>Programming Languages:</b> Python, C#/.NET, JavaScript
+                    </li>
+                    <li>
+                        <b>Markup Languages:</b> HTML, XAML, XML
+                    </li>
+                    <li>
+                        <b>Others Languages:</b> SQL (MariaDB/MySQL, SQLite), CSS, Bash
+                    </li>
+                    <li>
+                        <b>Past programming languages I used:</b> R, Fortran, Matlab, Maple, Mathematica
+                    </li>
+                    <li>
+                        <b>Virtualization:</b>
+                        <a href="https://hub.docker.com/u/cedricanover94" target="_blank"
+                            class="hover:text-blue-800 hover:bg-shocking-pink-200 hover:p-2 hover:rounded-lg">Docker</a>,
+                        Podman, VMWare, VirtualBox, Proxmox, WSL2, Sandboxie
+                    </li>
+                    <li>
+                        <b>OS:</b> Windows, Debian/Ubuntu
+                    </li>
+                    <li>
+                        <b>CI/CD:</b> GitHub Actions
+                    </li>
+                    <li>
+                        <b>Version Control:</b> Git
+                    </li>
+                    <li>
+                        <b>Cloud:</b> AWS
+                    </li>
+                    <li>
+                        <b>Business Intelligence (BI):</b> Power BI, DAX
+                    </li>
+                </ul>
 
-            <h2 class="text-2xl font-semibold mt-8 mb-4">
-                To-Learn/Learning:
-            </h2>
-            <ul class="list-disc list-inside space-y-2">
-                <li>
-                    <b>Languages:</b> NoSQL, Go, Dart, Rust
-                </li>
-                <li>
-                    <b>DevOps:</b> Ansible, Terraform, Jenkins, Vagrant, Packer, Minikube, Consul
-                </li>
-            </ul>
-        </section>
-    </main>
-</base-header-footer>
+                <h2 class="text-2xl font-semibold mt-8 mb-4">
+                    To-Learn/Learning:
+                </h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>
+                        <b>Languages:</b>
+                        <ul class="list-disc pl-14">
+                            <li>
+                                ❗NoSQL, Go, ❗Dart, Rust
+                            </li>
+                            <li>
+                                <b>Exotic:</b> Haskell, Common Lisp
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>DevOps:</b> ❗Ansible, ❗Terraform, Jenkins, Vagrant, Packer, Consul, Minikube|Kubernetes|Nomad
+                    </li>
+                    <li>
+                        <b>Frameworks, Libraries, and Packages:</b>
+                        <ul class="list-disc pl-14">
+                            <li>
+                                <b>HTML/CSS/JS:</b> ❗Node, ❗React, ❗Vue, Alpine
+                            </li>
+                            <li>
+                                <b>Python:</b> Flask, ❗FastAPI
+                            </li>
+                            <li>
+                                <b>C#/.NET:</b> ASP.NET
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Online Courses -->
+            <section class="text-pretty z-0 w-full max-w-screen-lg bg-white p-8 rounded-xl shadow-lg shadow-seagull-300">
+                <h3 class="text-3xl font-bold mb-6">Online Courses</h3>
+                <ul class="list-disc list-inside space-y-2">
+                    <li class="hover:text-blue-800"><a
+                            href="https://www.udemy.com/certificate/UC-ec00a59b-07f0-4395-8149-63888025aaba/"
+                            target="_blank">Machine
+                            Learning, Data Science and Deep Learning with Python</a>, Udemy</li>
+                    <li class="hover:text-blue-800"><a
+                            href="https://www.udemy.com/certificate/UC-da96fd72-ba2c-451a-934a-2b2af0aaaccc/"
+                            target="_blank">Introduction to
+                            Data Science using Python (Module 1/3)</a>, Udemy</li>
+                    <li class="hover:text-blue-800"><a
+                            href="https://www.udemy.com/certificate/UC-52177d4d-93af-4ee4-8981-75934527ac50/"
+                            target="_blank">Power BI: The Ultimate Orientation</a>, Udemy</li>
+                    <li class="hover:text-blue-800"><a
+                            href="https://www.udemy.com/certificate/UC-b20ce534-5554-4041-a160-8a0df13f906d/"
+                            target="_blank">Python for Financial Analysis and Algorithmic Trading</a>, Udemy</li>
+                    <li>Deep Learning A-Z™: Hands-On Artificial Neural Networks, Udemy</li>
+                    <li>SQL Essentials: The Beginner's Guide to SQL Language, Udemy</li>
+                    <!-- <li><a href="#" target="_blank">Course Name</a>, Issuing-Organization</li> -->
+                </ul>
+            </section>
+
+            <!-- Certifications -->
+            <!-- TODO -->
+
+            <!-- Education and Training -->
+            <section class="text-pretty z-0 w-full max-w-screen-lg bg-white p-8 rounded-xl shadow-lg shadow-seagull-300">
+                <h3 class="text-3xl font-bold mb-6">🎓 Education 🎓</h3>
+                <!-- NMTAFE -->
+                <div class="mb-5">
+                    <h2 class="text-2xl font-semibold mb-4">North Metropolitan TAFE</h2>
+                    <p class="mb-2"><i>Certificate 4 in IT Programming</i> | 2023 - 2024</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>
+                            <b>Languages:</b>
+                            Python,
+                            C#/.NET,
+                            SQL (MySQL, MariaDB, SQLite),
+                            XAML,
+                            JavaScript,
+                            HTML,
+                            CSS,
+                            Bash
+                        </li>
+                        <li>
+                            <b>Tools:</b>
+                            Git, <a href="https://github.com/CedricAnover" target="_blank"
+                                class="hover:text-blue-800 hover:bg-shocking-pink-200 hover:p-2 hover:rounded-lg">GitHub</a>
+                            Workflow
+                        </li>
+                        <li>
+                            <b>Projects:</b>
+                            👉 <a href="./projects.html" target="_blank"
+                                class="hover:text-blue-800 hover:bg-shocking-pink-200 hover:p-2 hover:rounded-lg">
+                                Project List
+                            </a>
+                        </li>
+                        <li>
+                            <b>Skills, Knowledge, Experiences:</b>
+                            <ul class="list-disc pl-14">
+                                <li>Object-Oriented Programming (OOP)</li>
+                                <li>Automated Unit Testing and Debugging</li>
+                                <li>Programming Principles: DRY, SOLID, OOP 4 Pillars</li>
+                                <li>Documentation Writing (Sphinx and Markdowns)</li>
+                                <li>Open-Source Contribution and Collaboration</li>
+                                <li>Agile Project Management</li>
+                                <li>Database Design</li>
+                                <li>Event-Driven Programming</li>
+                                <li>UX/UI and Accessibility</li>
+                                <li>Wireframes and Mockups</li>
+                                <li>Web APIs</li>
+                                <li>CI/CD Automation</li>
+                                <li>Data Structures and Algorithms</li>
+                                <li>Design Patterns</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Curtin University -->
+                <div class="mb-5">
+                    <h2 class="text-2xl font-semibold mb-4">Curtin University</h2>
+                    <p class="mb-2"><i>Bachelor of Science, Mathematics</i> | 2013 - 2016</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><b>Course Weighted Average:</b> <a
+                                href="https://www.dropbox.com/scl/fi/tvr94bt27klmuhx44byxy/Cedric-Anover-Academic-Transcript.pdf?rlkey=gu0d7m3t9iscav74eu4c27zje&st=fs991sw8&dl=0"
+                                target="_blank">
+                                83.22
+                            </a>
+                        </li>
+                        <li>
+                            <b>Achievements:</b>
+                            <ul class="list-disc pl-14">
+                                <li>Member of Vice-Chancellor's List</li>
+                                <li>Letters of Commendation</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Course Projects and Activities:</b>
+                            <ul class="list-disc pl-14">
+                                <li class="hover:text-blue-800"><a
+                                        href="https://www.dropbox.com/scl/fi/nt5g17174p6opqfgb1h1f/Industrial_Project_Report_Anover_Cedric.pdf?rlkey=ddi7mlcw7iiv4dntknysd7imk&st=tizcqc98&dl=0"
+                                        target="_blank">Investigation of
+                                        the Travelling Salesman Problem and its Heuristic Methods</a></li>
+                                <li class="hover:text-blue-800"><a
+                                        href="https://www.dropbox.com/scl/fi/bumhf8bcqstdej6f9wj4w/Problem-2.2-ver-2.pdf?rlkey=uzqsjql1x77e1zvti9bzqa2av&st=9crqmwka&dl=0"
+                                        target="_blank">Proof for Bounded Solution
+                                        Characterization
+                                        for Linear Systems</a></li>
+                                <li class="hover:text-blue-800"><a
+                                        href="https://www.dropbox.com/scl/fi/q7akxue19o53jrfmw40i4/Applied-Statistics-Report.pdf?rlkey=jfjl04p3xjvqnl3zff0sdn2jq&st=vsjy78ms&dl=0"
+                                        target="_blank">Inverse Matrix
+                                        Inequality for Symmetric
+                                        Positive-Definite Matrices</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </base-header-footer>
 
 </body>
+
 </html>
