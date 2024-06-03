@@ -756,6 +756,14 @@ video {
   height: 100vh;
 }
 
+.h-\[50px\] {
+  height: 50px;
+}
+
+.h-\[45px\] {
+  height: 45px;
+}
+
 .min-h-fit {
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -800,6 +808,18 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[51px\] {
+  width: 51px;
+}
+
+.w-\[53px\] {
+  width: 53px;
+}
+
+.w-\[52px\] {
+  width: 52px;
 }
 
 .max-w-lg {
