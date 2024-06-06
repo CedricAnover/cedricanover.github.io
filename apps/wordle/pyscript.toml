@@ -1,0 +1,9 @@
+name = "Wordle CLI Game"
+description = "Console Web App UI for Wordle."
+
+[files]
+"{DOMAIN}" = "https://raw.githubusercontent.com/ca20110820/ictprg302-coding-project/main/wordle"
+"{DOMAIN}/word-bank/all_words.txt" = "./all_words.txt"
+"{DOMAIN}/word-bank/target_words.txt" = "./target_words.txt"
+"{DOMAIN}/utils.py" = "./utils.py"
+"{DOMAIN}/data_processor.py" = "./data_processor.py"

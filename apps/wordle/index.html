@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="../mini-coi.js" scope="./"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/site.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+
+    <script type="module" src="../../templates/base.js" defer></script>
+
+    <title>Wordle</title>
+</head>
+<body>
+
+<base-header-footer>
+    <main slot="main-content" class="flex flex-col justify-center items-center min-h-fit">
+        <h1 class="text-3xl font-bold mb-8">Wordle</h1>
+
+        <!-- Run App -->
+        <script type="py" src="./game.py" terminal worker></script>
+    </main>
+</base-header-footer>
+
+<script type="py" src="./main.py" config="./pyscript.toml"></script>
+</body>
+</html>
