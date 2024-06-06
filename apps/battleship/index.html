@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <script src="./mini-coi.js" scope="./"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/site.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.5.2/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+
+    <script type="module" src="../../templates/base.js" defer></script>
+
+    <title>Battleship</title>
+</head>
+<body>
+
+<base-header-footer>
+    <main slot="main-content" class="flex flex-col justify-center items-center min-h-fit">
+        <h1 class="text-3xl font-bold mb-8">Battleship</h1>
+
+        <!-- App here -->
+        <script type="py" terminal worker
+                class="mb-3">
+            # =================================================================================
+            import code
+            from game import CLIGame
+
+            initial_code = """from game import CLIGame; cli_game = CLIGame(); cli_game.run();"""
+            exec_func_local_dict = {}
+            exec_func = lambda: exec(initial_code, globals(), exec_func_local_dict)
+
+            local_dict = {
+                "play_game": exec_func
+            }
+
+            code.interact(local=local_dict)
+            # =================================================================================
+        </script>
+
+        <!-- Instructions -->
+        <section class="mt-5">
+            <h2 class="text-xl font-bold">Instructions</h2>
+            <p>
+                To play the game simply run the command <i><code>play_game()</code></i> in the terminal.
+            </p>
+            <p>
+                The full instructions can be seen <a class="text-blue-600" target="_blank"
+                    href="https://github.com/Mrinank-Bhowmick/python-beginner-projects/tree/main/projects/Battleship/battleship_v2">here</a>.
+            </p>
+        </section>
+    </main>
+</base-header-footer>
+
+<script type="py" src="./main.py" config="./pyscript.toml"></script>
+</body>
+</html>

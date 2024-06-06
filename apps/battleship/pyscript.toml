@@ -1,0 +1,11 @@
+name = "Battleship PyScript Console Game"
+description = "Console Web App UI for the Battleship Board Game."
+
+[files]
+"{DOMAIN}" = "https://raw.githubusercontent.com/Mrinank-Bhowmick/python-beginner-projects/main/projects/Battleship/battleship_v2"
+"{DOMAIN}/board.py" = "./board.py"
+"{DOMAIN}/exceptions.py" = "./exceptions.py"
+"{DOMAIN}/game.py" = "./game.py"
+"{DOMAIN}/player.py" = "./player.py"
+"{DOMAIN}/ship.py" = "./ship.py"
+"{DOMAIN}/utils.py" = "./utils.py"
