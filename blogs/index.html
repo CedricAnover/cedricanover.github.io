@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +10,77 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap"
+        rel="stylesheet">
 
     <script type="module" src="../templates/base.js" defer></script>
 
     <title>Blogs</title>
 </head>
+
 <body>
 
-<base-header-footer>
-    <main slot="main-content">
-        Page under construction.
-    </main>
-</base-header-footer>
+    <base-header-footer>
+        <main slot="main-content"
+            class="container w-full mx-auto flex flex-col items-center justify-start my-8 space-y-8">
+
+            <!-- HOWTO Blogs -->
+            <div
+                class="w-fit md:w-2/5 bg-gradient-to-l from-purple-300 to-purple-100 text-purple-600 border border-purple-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md mx-5">
+                <div class="col-span-2 text-lg font-bold capitalize rounded-md">
+                    HOWTOs
+                </div>
+                <div class="col-span-2 rounded-md">
+                    Go-to resource for DevOps, Software Development, and IT solutions. Explore
+                    our comprehensive guides, step-by-step tutorials, and best practices to enhance your technical
+                    skills and know-how. Whether you're a seasoned professional or just starting out,
+                    our crafted content will help you navigate the complexities of the tech world with ease.
+                </div>
+                <div class="col-span-1">
+                    <button class="rounded-md bg-purple-300 hover:bg-purple-600 hover:text-white duration-300 p-2">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Cheatsheet Blogs -->
+            <div
+                class="w-fit md:w-2/5 bg-gradient-to-l from-purple-300 to-purple-100 text-purple-600 border border-purple-300 grid grid-col-2 justify-center p-4 gap-4 rounded-lg shadow-md mx-5">
+                <div class="col-span-2 text-lg font-bold capitalize rounded-md">
+                    Cheatsheets
+                </div>
+                <div class="col-span-2 rounded-md">
+                    Quick-reference hub for DevOps, Software Development, and IT essentials. Our concise,
+                    easy-to-follow cheatsheets provide you with the key commands, shortcuts, and tips you need to boost
+                    your productivity and efficiency. Perfect for beginners and experts alike, these handy guides are
+                    designed to keep crucial information at your fingertips.
+                </div>
+                <div class="col-span-1">
+                    <button class="rounded-md bg-purple-300 hover:bg-purple-600 hover:text-white duration-300 p-2">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="feather feather-external-link">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </base-header-footer>
 
 </body>
+
 </html>
