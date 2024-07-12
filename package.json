@@ -4,11 +4,12 @@
   "description": "Personal Static Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "startTwWatch": "npx tailwindcss -i ./src/input.css -o ./assets/css/site.css --watch"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Cedric Anover <cedric.anover@hotmail.com>",
+  "license": "MIT",
+  "homepage": "https://cedricanover.github.io/",
   "devDependencies": {
     "tailwindcss": "^3.4.3",
     "tw-elements": "^2.0.0"
