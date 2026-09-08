@@ -23,10 +23,16 @@
 <body>
 
     <base-header-footer>
-        <main slot="main-content"
-            class="px-4 flex flex-col md:min-full md:flex-row flex-wrap md:grid md:grid-cols-4 gap-4 items-stretch">
+        <main slot="main-content" class="px-4 my-8 max-w-screen-lg mx-auto">
+            <section class="text-center mb-2">
+                <h1 class="text-3xl font-bold">Projects</h1>
+                <p class="text-base text-neutral-500 mt-2">A selection of my web apps, open-source contributions, and
+                    personal builds.</p>
+            </section>
 
-            <project-card class="flex flex-col h-full m-[5px]" src="./apps" btn-label="Apps" title="Mini Web Apps">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
+
+            <project-card class="flex flex-col h-full" src="./apps" btn-label="Apps" title="Mini Web Apps">
                 <p slot="card-content">
                     This is a collection of Mini Web Applications built with JavaScript/HTML/CSS. I try my best to make
                     my life hard
@@ -34,14 +40,7 @@
                 </p>
             </project-card>
 
-            <!-- <project-card class="flex flex-col h-full m-[5px]" src="#"
-                btn-label="-btn-" title="Title">
-                <p slot="card-content">
-                    Description.
-                </p>
-            </project-card> -->
-
-            <project-card class="flex flex-col h-full m-[5px]" src="https://hub.docker.com/u/cedricanover94"
+            <project-card class="flex flex-col h-full" src="https://hub.docker.com/u/cedricanover94"
                 btn-label="Docker Hub" title="Docker Images">
                 <p slot="card-content">
                     My Collection of Docker (and Podman) Images. Most of these involve creating Dockerized GUI Apps with
@@ -201,6 +200,7 @@
                     sending emails.
                 </p>
             </project-card>
+            </div>
 
         </main>
     </base-header-footer>
