@@ -16,52 +16,77 @@
 
     <script type="module" src="../templates/base.js" defer></script>
 
+    <style>
+        /* Equal-height card bodies: fills the stretched card so the Buy
+           button pins to the bottom via mt-auto. Kept as page-scoped CSS
+           so no stylesheet rebuild is needed when adding new cards. */
+        .shop-card-body {
+            flex: 1 1 auto;
+        }
+    </style>
+
     <title>Shop</title>
 </head>
 
 <body>
 
     <base-header-footer>
-        <main slot="main-content"
-            class="px-4 flex flex-col md:min-full md:flex-row flex-wrap md:grid md:grid-cols-4 gap-4 items-stretch m-7">
+        <main slot="main-content" class="px-4 my-8 max-w-screen-lg mx-auto">
+            <section class="text-center mb-6">
+                <h1 class="text-3xl font-bold">Shop</h1>
+                <p class="text-base text-neutral-500 mt-2">Digital products and services. Secure checkout is handled
+                    by Payhip.</p>
+            </section>
 
-            <div class="block rounded-2xl bg-white shadow-xl dark:bg-neutral-700 text-center">
+            <!-- Products & services: add one <article> card per item below.
+                 Cards stretch to equal height; the Buy button pins to the
+                 bottom via .shop-card-body + mt-auto. -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 items-stretch">
 
-                <!-- Card image -->
-                <div class="relative overflow-hidden bg-cover bg-no-repeat" data-twe-ripple-init
-                    data-twe-ripple-color="light">
-                    <img class="rounded-t-lg"
-                        src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1ete4qjgp12eu1m851c4b1s9i1040r.png"
-                        alt="Product Image" />
-                    <a href="https://payhip.com/b/BLY8">
-                        <div
-                            class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                        </div>
-                    </a>
-                </div>
+                <article
+                    class="flex flex-col h-full overflow-hidden rounded-xl border border-gray-200 bg-white shadow-md dark:bg-neutral-700 text-center transition duration-300 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)]">
 
-                <!-- Card body -->
-                <div class="p-6">
+                    <!-- Card image -->
+                    <div class="relative overflow-hidden" data-twe-ripple-init data-twe-ripple-color="light">
+                        <img class="block w-full h-auto"
+                            src="https://payhip.com/cdn-cgi/image/format=auto,width=1500/https://pe56d.s3.amazonaws.com/o_1jhddnbo6boctkkqbl1mrb1qs814.jpg"
+                            alt="Cover image for FX Factor Edge" loading="lazy" />
+                        <a href="https://payhip.com/b/BLY8" aria-label="Buy FX Factor Edge on Payhip">
+                            <div
+                                class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                            </div>
+                        </a>
+                    </div>
 
-                    <!-- Title -->
-                    <h5 class="mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
-                        Forex PPP and Interest Rates
-                    </h5>
+                    <!-- Card body -->
+                    <div class="p-6 flex flex-col shop-card-body">
 
-                    <!-- Text -->
-                    <p class="mb-2 text-base text-neutral-500 dark:text-neutral-300">
-                        Value and Carry Portfolio are some of the popular investment strategies in the world of Forex.
-                        Value and Carry requires both PPP and Interest Rates, respectively.
-                    </p>
+                        <!-- Category -->
+                        <p class="mb-2 text-xs font-semibold uppercase tracking-wide text-blue-600">
+                            Digital Product
+                        </p>
 
-                    <!-- Button -->
-                    <a href="https://payhip.com/b/BLY8" data-theme="blue" data-product="BLY8"
-                        class="payhip-buy-button mt-3 inline-block rounded bg-blue-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-blue-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
-                        Buy now
-                    </a>
+                        <!-- Title -->
+                        <h2 class="mb-2 text-xl font-bold tracking-wide text-neutral-800 dark:text-neutral-50">
+                            FX Factor Edge
+                        </h2>
 
-                </div>
+                        <!-- Text -->
+                        <p class="mb-2 text-base text-neutral-500 dark:text-neutral-300">
+                            Value and Carry Portfolio are some of the popular investment strategies in the world of
+                            Forex.
+                            Value and Carry requires both PPP and Interest Rates, respectively.
+                        </p>
 
+                        <!-- Button -->
+                        <a href="https://payhip.com/b/BLY8" data-theme="blue" data-product="BLY8"
+                            class="payhip-buy-button mt-auto inline-block rounded bg-blue-500 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-blue-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-blue-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-blue-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]">
+                            Buy now
+                        </a>
+
+                    </div>
+
+                </article>
             </div>
         </main>
     </base-header-footer>
