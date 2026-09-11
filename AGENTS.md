@@ -12,7 +12,7 @@ Personal static site (plain HTML + Tailwind v3 + vanilla JS Web Components). Dep
 
 - Shared layout is a `<base-header-footer>` custom element (`templates/base.js`). At runtime it `fetch()`es `templates/base.html`, injects `assets/css/site.css` via a shadow-DOM `@import`, rewrites `.class-path` hrefs to the site root, and renders page content from `<main slot="main-content">`. New pages must follow this pattern.
 - `assets/js/project_paths.js` `getRelativeRoot()` returns `protocol + "//" + host + "/"`. Pages reference CSS/JS with depth-correct relative paths (`./` at root, `../../` under `apps/<x>/` — compare `index.html` with `apps/tasks/index.html`).
-- Tailwind content globs live in `tailwind.config.js` (root `*.html`, `templates/`, `apps/`, `src/`, `assets/js/`, `shop/`, `blogs/`). Custom palette: `heliotrope`, `shocking-pink`, `seagull`, overridden `blue`.
+- Tailwind content globs live in `tailwind.config.js` (root `*.html`, `templates/`, `apps/`, `src/`, `assets/js/`, `shop/`). Custom palette: `heliotrope`, `shocking-pink`, `seagull`, overridden `blue`.
 - `assets/css/site.css` is committed generated output — regenerate it whenever utility classes change; never hand-edit it.
 - `apps/` holds one folder per demo app: `tasks` and `inventory-management` (vanilla JS), `newton_cas` (JS under `assets/js/apps/`), `battleship` and `wordle` (PyScript: `main.py` + `pyscript.toml`). Per-page CSS goes under `assets/css/`, shared JS under `assets/js/`.
 
